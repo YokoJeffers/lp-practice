@@ -63,6 +63,7 @@
   color: #6ba7eb;
   position: absolute;
   top: 400px;
+  text-align: center;
 }
 
 .sub_title {
@@ -72,6 +73,7 @@
   color: #fff;
   position: absolute;
   bottom: 400px;
+  text-align: center;
 }
 
 .news {
@@ -189,20 +191,34 @@
   background: #6ba7eb;
 }
 
-.cell_table tr,
-th,
+.cell_table th,
 td {
   padding: 10px;
-  border-left: 2px solid #fff;
   text-align: center;
+}
+
+.cell_table td,
+th {
+  border-left: 2px solid #fff;
+}
+
+.cell_table td:first-child {
+  border-left: none;
+}
+
+.cell_table th:first-child {
+  border-left: none;
 }
 
 .cell_table tr:nth-child(odd) {
   background: #f9f9f9;
 }
 
+.cell_table tr:nth-child(even) {
+  background: #e0efff;
+}
+
 .sns {
-  width: 1100px;
   background: #e3f2fd;
   padding: 200px 0 200px 0;
 }
@@ -213,7 +229,7 @@ td {
 }
 
 .sns_icon {
-  margin-top: 25px 0 25px 0;
+  margin: 25px 0 25px 0;
 }
 
 .sns_icon a {
@@ -223,6 +239,7 @@ td {
   overflow: hidden;
   display: inline-block;
   text-decoration: none;
+  text-align: center;
 }
 
 .sns_icon a:hover {
@@ -245,4 +262,5 @@ td {
   font-size: 10px;
   letter-spacing: 0.5px;
   padding: 25px 0;
+  margin-right: 50px;
 }
