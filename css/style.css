@@ -210,6 +210,10 @@ th {
   border-left: none;
 }
 
+.cell_table td:first-child {
+  font-weight: bold;
+}
+
 .cell_table tr:nth-child(odd) {
   background: #f9f9f9;
 }
